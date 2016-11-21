@@ -7,8 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('todos', { path: '/todos'}, function() {
-    this.route('new', { path: '/new' })
+  this.route('home', { path: '/'}, function() {
+    this.route('todos', { path: '/todos'}, function() {
+      this.route('new', { path: '/new' })
+    })
   })
 });
 
